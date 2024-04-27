@@ -15,14 +15,13 @@ app.get('/', async (c) => {
 	return c.json(result);
 });
 
-app.get('/stream-event-source', async(c) => {
+app.get('/stream-event-source', async (c) => {
 	const msg = c.req.query('msg') || 'Can you explain RLHF?';
 	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3-8b-instruct', {
 		messages: [
 			{
 				role: 'system',
-				content:
-					'You love tacos. Anything the user says, you make an analogies regarding tacos.',
+				content: 'You love tacos. Anything the user says, you make analogies regarding tacos.',
 			},
 			{ role: 'user', content: msg },
 		],
@@ -30,8 +29,8 @@ app.get('/stream-event-source', async(c) => {
 	});
 	return new Response(eventSourceStream, {
 		headers: {
-			"Content-Type": "text/event-stream"
-		}
+			'Content-Type': 'text/event-stream',
+		},
 	});
 });
 
@@ -51,8 +50,10 @@ app.get('/stream-text', async (c) => {
 	return streamText(c, async (stream) => {
 		const chunks = events(new Response(eventSourceStream));
 		for await (const chunk of chunks) {
-			const data = JSON.parse(chunk.data);
-			stream.write(data.response);
+			if (chunk.data !== '[DONE]') {
+				const data = JSON.parse(chunk.data);
+				stream.write(data.response);
+			}
 		}
 	});
 });

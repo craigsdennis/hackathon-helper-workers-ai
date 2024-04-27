@@ -9,9 +9,7 @@ from cloudflare import Cloudflare
 st.title("Workers AI Text Generation Hackathon Helper")
 
 # Set OpenAI API key from Streamlit secrets
-client = Cloudflare(
-    api_token=st.secrets["CLOUDFLARE_API_TOKEN"]
-)
+client = Cloudflare(api_token=st.secrets["CLOUDFLARE_API_TOKEN"])
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -52,5 +50,6 @@ if prompt := st.chat_input("What is up?"):
                     if line.startswith("data: ") and not line.endswith("[DONE]"):
                         entry = json.loads(line.replace("data: ", ""))
                         yield entry["response"]
+
             completion = st.write_stream(iter_tokens(response))
     st.session_state.messages.append({"role": "assistant", "content": completion})
