@@ -1,6 +1,4 @@
-# 🦙🦙🦙 Workers AI
-
-TODO: LinkedOut
+# 🦙🦙🦙 Workers AI Hackathon 🦙🦙🦙
 
 - [ ] 🧡 Cloudflare
   - [ ] 🤝 A brief re-introduction
@@ -19,3 +17,4 @@ TODO: LinkedOut
     - [ ] 🏃‍♂️ env.AI.run
     - [ ] streaming: true
   - [ ] ⚡️ Pages: npm create cloudflare@latest
+  - [ ] 🧑‍💻👩‍💻 Happy Hacking 🧑‍💻👩‍💻

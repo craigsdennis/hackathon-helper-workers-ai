@@ -11,12 +11,12 @@
 export default {
 	async fetch(request, env, ctx) {
 		const result = await env.AI.run('@cf/meta/llama-3-8b-instruct', {
-			prompt: "Say Hello, World in ten different languages.",
+			prompt: 'Say Hello, World in ten different languages.',
 		});
 		return new Response(JSON.stringify(result), {
 			headers: {
-				"Content-Type": "application/json"
-			}
+				'Content-Type': 'application/json',
+			},
 		});
 	},
 };
