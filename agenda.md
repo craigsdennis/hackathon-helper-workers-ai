@@ -8,7 +8,7 @@
 - [ ] 🪓 REST API
   - [ ] 🐍 Python SDK 
   - [ ] 😘 Streamlit
-- [ ] 👨‍💻 Workers: npm create cloudflare@latest
+- [ ] 👨‍💻 Workers: npm create cloudflare=@latest
     - [ ] 👨‍💻 npm run dev (Developer Loop)
     - [ ] 🚀 npm run deploy
     - [ ] 🔥 npm install --save hono
