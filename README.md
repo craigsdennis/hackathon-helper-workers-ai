@@ -2,10 +2,14 @@
 
 ## Python
 
+[![Watch AI Hackathon Video on YouTube - Python and Streamlit](https://img.youtube.com/vi/YsJQUuN7R8sA/0.jpg)](https://youtu.be/sJQUuN7R8sA)
+
 There is a [Streamlit](https://streamlit.io) application in the [Python folder](./python/) that uses of the [official Python SDK](https://github.com/cloudflare/cloudflare-python) to hit the REST API.
 
 
 ## Workers - Serverless Application
+
+[![Watch AI Hackathon Video on YouTube - JavaScript base Cloudflare Workers AI App](https://img.youtube.com/vi/No4edhTwACg/0.jpg)](https://youtu.be/No4edhTwACg)
 
 In the [Workers folder](./workers/) there are some starters.
 
