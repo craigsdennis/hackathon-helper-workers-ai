@@ -8,7 +8,7 @@ from cloudflare import Cloudflare
 
 st.title("Workers AI Text Generation Hackathon Helper")
 
-# Set OpenAI API key from Streamlit secrets
+# Set Cloudflare API key from Streamlit secrets
 client = Cloudflare(api_token=st.secrets["CLOUDFLARE_API_TOKEN"])
 
 # Initialize chat history
