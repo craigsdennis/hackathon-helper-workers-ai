@@ -2,7 +2,7 @@
 
 ## Python
 
-[![Watch AI Hackathon Video on YouTube - Python and Streamlit](https://img.youtube.com/vi/YsJQUuN7R8sA/0.jpg)](https://youtu.be/sJQUuN7R8sA)
+[![Watch AI Hackathon Video on YouTube - Python and Streamlit](https://img.youtube.com/vi/sJQUuN7R8sA/0.jpg)](https://youtu.be/sJQUuN7R8sA)
 
 There is a [Streamlit](https://streamlit.io) application in the [Python folder](./python/) that uses of the [official Python SDK](https://github.com/cloudflare/cloudflare-python) to hit the REST API.
 
