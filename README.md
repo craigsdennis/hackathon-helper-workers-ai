@@ -22,5 +22,8 @@ Check out the [Vanilla Chat App repo](https://github.com/craigsdennis/vanilla-ch
 
 ## Resources
 
-- [Workers AI docs](https://developers.cloudflare.com/workers-ai/)
-- [Discord](https://discord.cloudflare.com)
+- 📚 [Workers AI docs](https://developers.cloudflare.com/workers-ai/)
+- 🎥 [Workers AI Explainer Video](https://youtu.be/l7EwEpZyTpw)
+- 💬 [Discord](https://discord.cloudflare.com)
+- 🎥 [Learn Cloudflare Workers - Full Course for Beginners](https://youtu.be/H7Qe96fqg1M)
+- 🎥 [Stateful Apps with Cloudflare Workers - Full Course (APIs, Workers KV, D1, SQLite, Prisma)](https://youtu.be/QTsaAhFvX9o)
