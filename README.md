@@ -18,7 +18,8 @@ In the [Workers folder](./workers/) there are some starters.
 
 ## Pages
 
-Check out the [Vanilla Chat App repo](https://github.com/craigsdennis/vanilla-chat-workers-ai) for a template.
+- Check out the [Vanilla Chat App repo](https://github.com/craigsdennis/vanilla-chat-workers-ai) for a template.
+- Take the [Floor is LLaVa](https://github.com/craigsdennis/floor-is-llava-workers-ai) Vision app template for spin.
 
 ## Resources
 
