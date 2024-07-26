@@ -11,10 +11,10 @@
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.1.0",
     "vitest": "1.3.0",
-    "wrangler": "^3.0.0"
+    "wrangler": "^3.67.1"
   },
   "dependencies": {
     "fetch-event-stream": "^0.1.5",
-    "hono": "^4.2.8"
+    "hono": "^4.5.1"
   }
 }

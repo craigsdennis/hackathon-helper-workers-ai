@@ -4,9 +4,24 @@ import { events } from 'fetch-event-stream';
 
 const app = new Hono();
 
-app.get('/', async (c) => {
+app.get('/', async(c) => {
+	return c.html(`<html>
+	<head>
+		<title>Hello Hono Examples</title>
+	</head>
+	<body>
+		<ul>
+			<li><a href="/standard">Standard AI usage</a></li>
+			<li><a href="/stream-event-source">Streaming - EventSource</a></li>
+			<li><a href="/stream-text">Streaming - Text</a></li>
+		</ul>
+	</body>
+	</html>`);
+})
+
+app.get('/standard', async (c) => {
 	const msg = c.req.query('msg') || 'I am so going to win';
-	const result = await c.env.AI.run('@cf/meta/llama-3-8b-instruct', {
+	const result = await c.env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
 		messages: [
 			{ role: 'system', content: 'You are a poet. Every response should rhyme with what the user said' },
 			{ role: 'user', content: msg },
@@ -17,7 +32,7 @@ app.get('/', async (c) => {
 
 app.get('/stream-event-source', async (c) => {
 	const msg = c.req.query('msg') || 'Can you explain RLHF?';
-	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3-8b-instruct', {
+	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
 		messages: [
 			{
 				role: 'system',
@@ -36,7 +51,7 @@ app.get('/stream-event-source', async (c) => {
 
 app.get('/stream-text', async (c) => {
 	const msg = c.req.query('msg') || 'What is the meaning of life?';
-	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3-8b-instruct', {
+	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
 		messages: [
 			{
 				role: 'system',
