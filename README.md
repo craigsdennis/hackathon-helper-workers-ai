@@ -15,12 +15,13 @@ In the [Workers folder](./workers/) there are some starters.
 
 - [hello-workers-ai](./workers/hello-world-ai) : Boilerplate Workers code calling AI.
 - [hello-hono-ai](./workers/hello-hono-ai): Shows off using the amazing [Hono](https://hono.dev) frawework 🔥 and adds some streaming examples.
-- [typescript-based-api](./typescript-based-api): A demo app that [Hono](https://hono.dev) 🔥 TypeScript based API that allows for streaming and a static `assets` based front-end. Shows off how to handle streaming in both client and server.
+- [typescript-based-api](./workers/typescript-based-api): A demo app that [Hono](https://hono.dev) 🔥 TypeScript based API that allows for streaming and a static `assets` based front-end. Shows off how to handle streaming in both client and server.
 
 ## Pages
 
 - Check out the [Vanilla Chat App repo](https://github.com/craigsdennis/vanilla-chat-workers-ai) for a template.
 - Take the [Floor is LLaVa](https://github.com/craigsdennis/floor-is-llava-workers-ai) Vision app template for spin.
+- Meet [Homie](https://github.com/craigsdennis/lightbulb-moment-tool-calling) a Function Calling enabled Home Automation assistant. Give your LLM more superpowers.
 
 ## Resources
 
