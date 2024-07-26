@@ -14,7 +14,8 @@ There is a [Streamlit](https://streamlit.io) application in the [Python folder](
 In the [Workers folder](./workers/) there are some starters.
 
 - [hello-workers-ai](./workers/hello-world-ai) : Boilerplate Workers code calling AI.
-- [hello-hono-ai](./workers/hello-hono-ai): Shows off using the amazing [Hono]([https://honojs.com](https://github.com/honojs/hono)) frawework 🔥 and adds some streaming examples.
+- [hello-hono-ai](./workers/hello-hono-ai): Shows off using the amazing [Hono](https://hono.dev) frawework 🔥 and adds some streaming examples.
+- [typescript-based-api](./typescript-based-api): A demo app that [Hono](https://hono.dev) 🔥 TypeScript based API that allows for streaming and a static `assets` based front-end. Shows off how to handle streaming in both client and server.
 
 ## Pages
 

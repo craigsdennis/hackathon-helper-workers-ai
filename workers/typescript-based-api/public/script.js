@@ -16,7 +16,7 @@ document.getElementById('searchButton').addEventListener('click', async function
 		body: JSON.stringify({ word }),
 	});
 	resultSection.style.display = 'block';
-	definition.innerText = "";
+	definition.innerText = '';
 	const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
 	while (true) {
 		const { value, done } = await reader.read();
