@@ -1,4 +1,6 @@
-# Workers AI Hackathon Starter Kit
+# Workers AI Hackathon Helper Starter Kit
+
+**[🔗 shrty.dev/hackathon-helper](https://shrty.dev/hackathon-helper)**
 
 ## Python
 
