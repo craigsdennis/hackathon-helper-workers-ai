@@ -13,10 +13,6 @@ export default {
 		const result = await env.AI.run('@cf/meta/llama-3-8b-instruct', {
 			prompt: 'Say Hello, World in ten different languages.',
 		});
-		return new Response(JSON.stringify(result), {
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		});
+		return Response.json(result);
 	},
 };
