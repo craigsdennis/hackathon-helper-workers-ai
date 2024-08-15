@@ -3,12 +3,7 @@ import { streamText } from "hono/streaming";
 import { events } from 'fetch-event-stream';
 
 
-type Bindings = {
-	[key in keyof CloudflareBindings]: CloudflareBindings[key];
-};
-
-
-const app = new Hono<{Bindings: Bindings}>();
+const app = new Hono<{Bindings: Env}>();
 
 app.post("/api/etymology", async(c) => {
 	const payload = await c.req.json();
@@ -24,7 +19,7 @@ app.post("/api/etymology", async(c) => {
 		stream: true
 	});
 	return streamText(c, async (stream) => {
-		const chunks = events(new Response(eventStream));
+		const chunks = events(new Response(eventStream as ReadableStream));
 		for await (const chunk of chunks) {
 			if (chunk.data !== undefined && chunk.data !== '[DONE]') {
 				const data = JSON.parse(chunk.data);
