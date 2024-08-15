@@ -4,6 +4,8 @@
 
 Copy your secrets file and add your credentials.
 
+Get your credentials at dash.cloudflare.com, AI > Use REST API, Create a Workers AI API Token
+
 ```bash
 cp .streamlit/secrets.toml.example .streamlit/secrets.toml
 ```
