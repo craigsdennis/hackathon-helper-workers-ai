@@ -4,7 +4,7 @@ document.getElementById('searchButton').addEventListener('click', async function
 	const definition = document.getElementById('definition');
 
 	if (word.trim() === '') {
-		alert('Please enter a word');
+		alert('Please enter an ingredient');
 		return;
 	}
 
