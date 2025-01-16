@@ -10,7 +10,7 @@
 
 export default {
 	async fetch(request, env, ctx) {
-		const result = await env.AI.run('@cf/meta/llama-3-8b-instruct', {
+		const result = await env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
 			prompt: 'Say Hello, World in ten different languages.',
 		});
 		return Response.json(result);

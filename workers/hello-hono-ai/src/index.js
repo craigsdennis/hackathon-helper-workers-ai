@@ -21,7 +21,7 @@ app.get('/', async(c) => {
 
 app.get('/standard', async (c) => {
 	const msg = c.req.query('msg') || 'I am so going to win';
-	const result = await c.env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
+	const result = await c.env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
 		messages: [
 			{ role: 'system', content: 'You are a poet. Every response should rhyme with what the user said' },
 			{ role: 'user', content: msg },
@@ -32,7 +32,7 @@ app.get('/standard', async (c) => {
 
 app.get('/stream-event-source', async (c) => {
 	const msg = c.req.query('msg') || 'Can you explain RLHF?';
-	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
+	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
 		messages: [
 			{
 				role: 'system',
@@ -51,7 +51,7 @@ app.get('/stream-event-source', async (c) => {
 
 app.get('/stream-text', async (c) => {
 	const msg = c.req.query('msg') || 'What is the meaning of life?';
-	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
+	const eventSourceStream = await c.env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
 		messages: [
 			{
 				role: 'system',

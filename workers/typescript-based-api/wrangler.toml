@@ -1,9 +1,11 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "typescript-based-api"
 main = "src/index.ts"
-compatibility_date = "2024-07-22"
+compatibility_date = "2025-01-09"
 compatibility_flags = ["nodejs_compat"]
-assets = "public"
+
+[assets]
+directory = "./public"
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
