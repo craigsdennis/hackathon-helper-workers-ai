@@ -30,9 +30,9 @@ if prompt := st.chat_input("What is up?"):
 
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
-        with client.workers.ai.with_streaming_response.run(
+        with client.ai.with_streaming_response.run(
             account_id=st.secrets["CLOUDFLARE_ACCOUNT_ID"],
-            model_name="@cf/meta/llama-3.1-8b-instruct",
+            model_name="@cf/meta/llama-3.3-70b-instruct-fp8-fast",
             messages=[
                 {"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages
